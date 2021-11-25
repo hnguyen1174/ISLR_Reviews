@@ -4,4 +4,4 @@
 
 ### 13.1 A Quick Review of Hypothesis Testing
 
-* Testing inline: $e^{i \pi} = -1$
+* Testing inline: ![formula](https://render.githubusercontent.com/render/math?math=\color{red}\large\f(x)=sin(x))
