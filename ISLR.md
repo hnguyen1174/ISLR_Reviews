@@ -4,4 +4,4 @@
 
 ### 13.1 A Quick Review of Hypothesis Testing
 
-* Testing inline: <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+* Testing inline: $e^{i \pi} = -1$
