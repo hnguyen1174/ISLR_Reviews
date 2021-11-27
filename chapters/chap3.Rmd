@@ -5,9 +5,10 @@ title: "Chapter 3: Linear Regression"
 ```{r load_libraries}
 library(MASS)
 library(ISLR2)
-library(stargazer)
-library(tidyverse)
-library(ggthemes)
+library(stargazer)     # Summarizing
+library(tidyverse)     # Data processing
+library(ggthemes)      # Plotting
+library(car)           # VIF
 ```
 
 ```{r exploration}
@@ -117,7 +118,12 @@ plot(predict(lm.fit), rstudent(lm.fit))
 
 **Leverage statistics**
 
-On the basis of the residual plots, there is some evidence of non-linearity. Leverage statistics can be computed for any number of predictors using the `hatvalues()` function. The `which.max()` function identifies the index of the largest element of a vector. In this case, it tells us which observation has the largest leverage statistic.
+*  Observations with high leverage high have an unusual value for $x_i$ (the predictor value for these observations are large relative to the other observations).
+* We observe that removing the high leverage observation has a much more substantial impact on the least squares line than removing the outlier.
+* This problem is more pronounced in **multiple regression** settings with more than two predictors, because then there is no simple way to plot all dimensions of the data simultaneously.
+* In order to quantify an observation’s leverage, we compute the leverage statisti: $h_i = \frac{1}{n} + \frac{(x_i - \overline{x})^2}{\sum_{i'=1}^{n} (x'_i - \overline{x})^2}$
+* The leverage statistic hi is always between $\frac{1}{n}$ and 1, and the average leverage for all the observations is always equal to $\frac{p + 1}{n}$. So if a given observation has a leverage statistic that greatly exceeds $\frac{p + 1}{n}$, then we may suspect that the corresponding point has high leverage.
+* On the basis of the residual plots, there is some evidence of non-linearity. Leverage statistics can be computed for any number of predictors using the **`hatvalues()`** function. The `which.max()` function identifies the index of the largest element of a vector. In this case, it tells us which observation has the largest leverage statistic.
 
 ```{r}
 plot(hatvalues(lm.fit))
@@ -127,8 +133,60 @@ plot(hatvalues(lm.fit))
 which.max(hatvalues(lm.fit))
 ```
 
+**Multiple Linear Regression**
 
+```{r}
+lm.fit <- lm(medv ~ lstat + age, data = Boston)
+summary(lm.fit)
+```
 
+```{r}
+# Use all predictors
+lm.fit <- lm(medv ~ ., data = Boston)
+summary(lm.fit)
+```
 
+```{r}
+lm.fit1 <- lm(medv ~ . - age, data = Boston)
+summary(lm.fit1)
+```
 
+```{r}
+lm.fit1 <- update(lm.fit, ~ . - age)
+```
+
+**Getting components of `lm.fit`**
+
+```{r}
+# Use ?summary.lm to see what is available
+
+# R-squared
+print(summary(lm.fit)$r.sq)
+
+# RSE
+print(summary(lm.fit)$sigma)
+```
+
+**Variance inflation factors**
+
+* A simple way to detect collinearity is to look at the correlation matrix of the predictors.
+* Unfortunately, not all collinearity problems can be detected by inspection of the correlation matrix: it is possible for collinear- ity to exist between three or more variables even if no pair of variables has a particularly high correlation. We call this situation multicollinearity.
+* Instead of inspecting the correlation matrix, a better way to assess multi- collinearity is to compute the variance inflation factor (VIF).
+* The VIF is the ratio of the variance of $\beta_j$ when fitting the full model divided by the variance of $\beta_j$ if fit on its own.
+* The smallest possible value for VIF is 1, which indicates the complete absence of collinearity. Typically in practice there is a small amount of collinearity among the predictors.
+* As a rule of thumb, a VIF value that exceeds 5 or 10 indicates a problematic amount of collinearity. 
+
+```{r}
+vif(lm.fit)
+```
+
+**Interaction Term**
+
+* The syntax `lstat:black` tells R to include an interaction term between lstat and black. The syntax `lstat * age` simultaneously includes lstat, age, and the interaction term `lstat × age` as predictors; it is a short-hand for `lstat + age + lstat:age`.
+
+```{r}
+summary(lm(medv ~ lstat * age, data = Boston))
+```
+
+**Non-linear Transformations of the Predictors**
 
