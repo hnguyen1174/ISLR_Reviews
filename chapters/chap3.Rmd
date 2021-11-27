@@ -1,0 +1,134 @@
+---
+title: "Chapter 3: Linear Regression"
+---
+
+```{r load_libraries}
+library(MASS)
+library(ISLR2)
+library(stargazer)
+library(tidyverse)
+library(ggthemes)
+```
+
+```{r exploration}
+# medv: median house value
+# rm: average number of rooms per house
+# age: age of house
+# lstat: percentage of household with low socioeconomic status
+
+head(Boston)
+```
+
+`names(lm.fit)` will tell us what pieces of information is stored in lm.fit:
+* **coefficients** 
+* **residuals**
+* **effects**
+* **rank**
+* **fitted.values** 
+* **assign**       
+* **qr**
+* **df.residual** 
+* **xlevels**
+* **call**
+* **terms** 
+* **model**
+
+```{r linear_model}
+lm.fit <- lm(medv ~ lstat, data = Boston)
+summary(lm.fit)
+```
+
+**Coefficients**
+
+To extract coefficients, we can use the `coef()` function:
+
+```{r coefficients}
+coef(lm.fit)
+```
+
+**Confidence Interval**
+
+```{r confidence_interval}
+confint(lm.fit)
+```
+
+For instance, the 95 % confidence interval associated with a `lstat` value of 10 is (24.47, 25.63), and the 95 % prediction interval is (12.828, 37.28). As expected, the confidence and prediction intervals are centered around the same point (a predicted value of 25.05 for medv when `lstat` equals 10), but the latter are substantially wider.
+
+```{r}
+predict(lm.fit, 
+        data.frame(lstat = (c(5, 10, 15))),
+        interval = "confidence")
+
+predict(lm.fit, 
+        data.frame(lstat = (c(5, 10, 15))),
+        interval = "prediction")
+```
+
+```{r}
+plot(Boston$lstat, Boston$medv)
+# Least-squared regression line
+abline(lm.fit)
+```
+
+```{r other_plots}
+# plot(Boston$lstat, Boston$medv)
+# abline(lm.fit, lwd = 3)
+# abline(lm.fit, lwd = 3, col = 'red')
+# plot(Boston$lstat, Boston$medv, col = 'red')
+# plot(Boston$lstat, Boston$medv, pch = 20)
+plot(Boston$lstat, Boston$medv, pch = "+")
+# plot(1:20, 1:20, pch = 1:20)
+```
+
+`par(mfrow = c(2, 2))` divides the plotting region into a 2 × 2 grid of panels.
+
+```{r}
+par(mfrow = c(2, 2))
+plot(lm.fit)
+```
+
+**Residuals and Outliers**
+
+Another important assumption of the linear regression model is that the error terms have a constant variance. The standard errors, confidence intervals, and hypothesis tests associated with the linear model rely upon this assumption. Plotting the residuals against the predictions is a way to confirm this assumption.
+
+* `residuals()`
+* `rstudent()`: will return the studentized residuals. A studentized residual is the quotient resulting from the division of a residual by an estimate of its standard deviation. It is a form of a Student's t-statistic, with the estimate of error varying between points.
+
+```{r}
+plot(predict(lm.fit), residuals(lm.fit))
+```
+
+```{r}
+tibble(predictions = predict(lm.fit), residuals = residuals(lm.fit)) %>% 
+  ggplot(aes(x = predictions, y = residuals)) +
+  geom_point(col = 'blue') +
+  theme_hc()
+```
+
+* Outliers are observations for which the response $y_i$ is unusual given the predictor $x_i$.
+* Removing the outlier has little effect on the least squares line: it leads to almost no change in the slope, and a miniscule reduction in the intercept. It is typical for an outlier that does not have an unusual predictor value to have little effect on the least squares fit.
+* Inclusion of the outliers may decrease goodness of fit (R-squared) and increase RSE.
+* It can be difficult to decide how large a residual needs to be before we consider the point to be an outlier. To address this problem, instead of plotting the residuals, we can plot the studentized residuals, computed by dividing each residual by its estimated standard error. **Observations whose studentized residuals are greater than 3 in abso- lute value are possible outliers.**
+* If we believe that an outlier has occurred due to an error in data collection or recording, then one solution is to simply remove the observation. However, care should be taken, since an outlier may instead indicate a deficiency with the model, such as a missing predictor.
+
+```{r}
+plot(predict(lm.fit), rstudent(lm.fit))
+```
+
+**Leverage statistics**
+
+On the basis of the residual plots, there is some evidence of non-linearity. Leverage statistics can be computed for any number of predictors using the `hatvalues()` function. The `which.max()` function identifies the index of the largest element of a vector. In this case, it tells us which observation has the largest leverage statistic.
+
+```{r}
+plot(hatvalues(lm.fit))
+```
+
+```{r}
+which.max(hatvalues(lm.fit))
+```
+
+
+
+
+
+
