@@ -56,5 +56,6 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
   * [Not Merely Averages: Using Machine Learning to Estimate Heterogeneous Treatment Effects (CATE, BLP, GATES, CLAN)](https://towardsdatascience.com/not-merely-averages-using-machine-learning-to-estimate-heterogeneous-treatment-effects-573bf7376a73)
 * Causal ML:
   * [Causal ML for Data Science: Deep Learning with Instrumental Variables](https://towardsdatascience.com/causal-ml-for-data-science-deep-learning-with-instrumental-variables-96e5b7cc0482)
+  * [Meta-learners for Estimating Treatment Effect in Causal Inference](https://towardsdatascience.com/meta-learners-for-estimating-treatment-effect-in-causal-inference-4f7071503401)
 * Causal Deep Learning:
   * [Multivariate Time Series Forecasting Based on Causal Inference with Transfer Entropy and Graph Neural Network](https://www.researchgate.net/publication/341148262_Multivariate_Time_Series_Forecasting_Based_on_Causal_Inference_with_Transfer_Entropy_and_Graph_Neural_Network)
