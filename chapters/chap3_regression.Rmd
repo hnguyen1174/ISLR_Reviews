@@ -188,5 +188,65 @@ vif(lm.fit)
 summary(lm(medv ~ lstat * age, data = Boston))
 ```
 
-**Non-linear Transformations of the Predictors**
+**Non-linear Transformations of the Predictors and ANOVA**
+
+```{r}
+# The function I() is needed since the ^ has a special meaning in a formula object.
+lm.fit2 <- lm(medv ~ lstat + I(lstat^2), data = Boston)
+summary(lm.fit2)
+```
+
+* We use the `anova()` function to further quantify the extent to which the quadratic fit is superior to the linear fit.
+* The `anova()` function performs a hypothesis test comparing the two models. The null hypothesis is that the two models fit the data equally well, and the alternative hypothesis is that the full model is superior.
+* Here the F-statistic is 135 and the associated p-value is virtually zero. This provides very clear evidence that the model containing the predictors $lstat$ and $lstat^2$ is far superior to the model that only contains the predictor $lstat$. 
+* We see that when the $lstat^2$ term is included in the model, there is little discernible pattern in the residuals.
+
+```{r}
+lm.fit <- lm(medv ~ lstat, data = Boston)
+anova(lm.fit, lm.fit2)
+```
+
+```{r}
+par(mfrow = c(2, 2))
+plot(lm.fit2)
+```
+
+```{r}
+# Higher polynomials
+lm.fit5 <- lm(medv ~ poly(lstat, 5), data = Boston)
+summary(lm.fit5)
+```
+
+* By default, the `poly()` function orthogonalizes the predictors: this means that the features output by this function are not simply a sequence of powers of the argument. However, a linear model applied to the output of the poly() function will have the same fitted values as a linear model applied to the raw polynomials (although the coefficient estimates, standard errors, and p-values will differ).
+
+```{r}
+# Higher polynomials
+lm.fit5 <- lm(medv ~ poly(lstat, 5, raw=TRUE), data = Boston)
+summary(lm.fit5)
+```
+
+```{r}
+summary(lm(medv ~ log(rm), data = Boston))
+```
+
+**Qualitative Predictors**
+
+* `lm()`: given a qualitative variable such as `Shelveloc`, R generates dummy variables automatically.
+
+```{r}
+head(Carseats)
+```
+
+```{r}
+lm.fit <- lm(Sales ~ . + Income:Advertising + Price:Age, data = Carseats)
+summary(lm.fit)
+```
+
+* The `contrasts()` function returns the coding that R uses for the dummy variables.
+* The fact that the coefficient for `ShelveLocGood` in the regression output is positive indicates that a good shelving location is associated with high sales (relative to a bad location). And `ShelveLocMedium` has a smaller positive coefficient, indicating that a medium shelving location is associated with higher sales than a bad shelving location but lower sales than a good shelving location.
+
+```{r}
+attach(Carseats)
+contrasts(ShelveLoc)
+```
 
