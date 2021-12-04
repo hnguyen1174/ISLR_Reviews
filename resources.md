@@ -15,3 +15,6 @@
 * [Paper: A/B Testing for Social Network Services with Directed User Graphs](http://www.tkl.iis.u-tokyo.ac.jp/~kenn-chen/files/AB%20Testing%20for%20Social%20Network%20Services%20with%20Directed%20User%20Graphs.pdf)
 * [Paper: Graph Cluster Randomization: Network Exposure to Multiple Universes](http://chbrown.github.io/kdd-2013-usb/kdd/p329.pdf)
 * [TDS Blog: Sample Ratio Mismatch](https://towardsdatascience.com/the-essential-guide-to-sample-ratio-mismatch-for-your-a-b-tests-96a4db81d7a4)
+* [Blog: Pitfalls of Multi-arm Experiments](https://blog.statsig.com/pitfalls-of-multi-arm-experiments-445c81ae75d)
+* [Udemy Course: 
+Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/course/bayesian-machine-learning-in-python-ab-testing/learn/lecture/21793938?start=15#overview)
