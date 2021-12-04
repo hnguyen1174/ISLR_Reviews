@@ -23,6 +23,7 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
 
 * Difference in difference:
   * [Airbnb Blog: Difference in difference](https://medium.com/airbnb-engineering/experimentation-measurement-for-search-engine-optimization-b64136629760)
+  * [Tutorial: Causal Inference using Difference in Differences, Causal Impact, and Synthetic Control](https://towardsdatascience.com/causal-inference-using-difference-in-differences-causal-impact-and-synthetic-control-f8639c408268)
 * Uplift Model
   * [TDS Blog: Introduction to Uplift model](https://towardsdatascience.com/a-quick-uplift-modeling-introduction-6e14de32bfe0)
   * [Blog: Enterprise Causal Inference: Beyond Churn Modeling](https://medium.com/data-from-the-trenches/enterprise-causal-inference-beyond-churn-modeling-78a13a431501)
