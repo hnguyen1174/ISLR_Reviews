@@ -19,8 +19,10 @@
 * [Udemy Course: 
 Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/course/bayesian-machine-learning-in-python-ab-testing/learn/lecture/21793938?start=15#overview)
 
-## 2. Quasi-Experiment
+## 2. Quasi-Experiment and Observational Study
 
+* General:
+  * [Beyond A/B Testing: Primer on Causal Inference](https://towardsdatascience.com/beyond-a-b-testing-primer-on-causal-inference-d8e462d90a0b)
 * Difference in difference:
   * [Airbnb Blog: Difference in difference](https://medium.com/airbnb-engineering/experimentation-measurement-for-search-engine-optimization-b64136629760)
   * [Tutorial: Causal Inference using Difference in Differences, Causal Impact, and Synthetic Control](https://towardsdatascience.com/causal-inference-using-difference-in-differences-causal-impact-and-synthetic-control-f8639c408268)
