@@ -38,3 +38,17 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
   * [Tutorial: Causal Inference Using Synthetic Control: The Ultimate Guide](https://towardsdatascience.com/causal-inference-using-synthetic-control-the-ultimate-guide-a622ad5cf827) 
 * Switch-backs:
   * [DoorDash tech blog: Switchback Tests and Randomized Experimentation Under Network Effects at DoorDash](https://medium.com/@DoorDash/switchback-tests-and-randomized-experimentation-under-network-effects-at-doordash-f1d938ab7c2a) 
+* Local Average Treatment Effect (LATE)
+
+## 3. Natural Experiments
+
+* Example: [Does compulsory school attendance affect schooling and earnings?](https://www.jstor.org/stable/2937954)
+
+## 4. Advanced Causal Inference Methods
+
+* Causal Trees and Causal Forest:
+  * [Causal Tree Learning For Heterogeneous Treatment Effect Estimation](https://www.causalflows.com/causal-tree-learning/)
+* Heterogeneous Treatment Effects:
+  * [Not Merely Averages: Using Machine Learning to Estimate Heterogeneous Treatment Effects (CATE, BLP, GATES, CLAN)](https://towardsdatascience.com/not-merely-averages-using-machine-learning-to-estimate-heterogeneous-treatment-effects-573bf7376a73)
+* Causal ML:
+  * [Causal ML for Data Science: Deep Learning with Instrumental Variables](https://towardsdatascience.com/causal-ml-for-data-science-deep-learning-with-instrumental-variables-96e5b7cc0482)
