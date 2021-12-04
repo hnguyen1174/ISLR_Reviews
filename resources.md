@@ -1,7 +1,7 @@
 ## 1. A/B Testing
 
 * [A/B Testing course (Udacity/Google)](https://www.udacity.com/course/ab-testing--ud257)
-* [Advanced A/B testing workshop](https://eleafeit.github.io/ab_test/)
+* [Tutorial: Advanced A/B testing workshop](https://eleafeit.github.io/ab_test/)
 * [Trustworthy Online Experiments](https://www.amazon.com/Trustworthy-Online-Controlled-Experiments-Practical-ebook/dp/B0845Y3DJV)
 * [TDS: Common Pitfalls of Running an A/B Test](https://towardsdatascience.com/online-controlled-experiment-8-common-pitfalls-and-solutions-ea4488e5a82e)
 * [TDS: How to choose a sample size](https://towardsdatascience.com/how-is-sample-size-related-to-standard-error-power-confidence-level-and-effect-size-c8ee8d904d9c)
@@ -29,3 +29,8 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
   * [Uplift Modeling](https://towardsdatascience.com/uplift-modeling-e38f96b1ef60)
   * [Article: How uplift modeling helped Obama’s campaign — and can aid marketers](https://www.predictiveanalyticsworld.com/machinelearningtimes/how-uplift-modeling-helped-obamas-campaign-and-can-aid-marketers/2613/)
   * [Blog: Causal Machine Learning: Individualized Treatment Effects and Uplift Modeling](https://johaupt.github.io/causal%20machine%20learning/Uplift_ITE_summary) 
+* Regression Discontinuity (RDD):
+  * [TDS Blog: An Introduction to Regression Discontinuity Design](https://towardsdatascience.com/an-introduction-to-regression-discontinuity-design-f55075079def) 
+* Instrument Variables:
+  * [Roblox Tech Blog: Causal Inference Using Instrumental Variables](https://robloxtechblog.com/causal-inference-using-instrumental-variables-580272d9ddbd)
+  * [Tutorial: Machine Learning Meets Instrumental Variables](https://medium.com/teconomics-blog/machine-learning-meets-instrumental-variables-c8eecf5cec95) 
