@@ -34,3 +34,7 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
 * Instrument Variables:
   * [Roblox Tech Blog: Causal Inference Using Instrumental Variables](https://robloxtechblog.com/causal-inference-using-instrumental-variables-580272d9ddbd)
   * [Tutorial: Machine Learning Meets Instrumental Variables](https://medium.com/teconomics-blog/machine-learning-meets-instrumental-variables-c8eecf5cec95) 
+* Synthetic Control:
+  * [Tutorial: Causal Inference Using Synthetic Control: The Ultimate Guide](https://towardsdatascience.com/causal-inference-using-synthetic-control-the-ultimate-guide-a622ad5cf827) 
+* Switch-backs:
+  * [DoorDash tech blog: Switchback Tests and Randomized Experimentation Under Network Effects at DoorDash](https://medium.com/@DoorDash/switchback-tests-and-randomized-experimentation-under-network-effects-at-doordash-f1d938ab7c2a) 
