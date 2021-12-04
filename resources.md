@@ -10,3 +10,5 @@
 * [Run randomness check: A/A test](https://vwo.com/blog/aa-test-before-ab-testing/) and [TDS: statistical approach to A/A test](https://towardsdatascience.com/an-a-b-test-loses-its-luster-if-a-a-tests-fail-2dd11fa6d241)
 * [Lyft Engineering: Network effect](https://eng.lyft.com/experimentation-in-a-ridesharing-marketplace-b39db027a66e)
 * [TDS: A/B testing in social network](https://towardsdatascience.com/ab-testing-challenges-in-social-networks-e67611c92916)
+* [Paper: Network A/B Testing: From Sampling to Estimation, Gui et al.](https://hanj.cs.illinois.edu/pdf/www15_hgui.pdf)
+* [Blog: Designing A/B tests in a collaboration network](https://www.unofficialgoogledatascience.com/2018/01/designing-ab-tests-in-collaboration.html)
