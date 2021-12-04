@@ -12,3 +12,6 @@
 * [TDS: A/B testing in social network](https://towardsdatascience.com/ab-testing-challenges-in-social-networks-e67611c92916)
 * [Paper: Network A/B Testing: From Sampling to Estimation, Gui et al.](https://hanj.cs.illinois.edu/pdf/www15_hgui.pdf)
 * [Blog: Designing A/B tests in a collaboration network](https://www.unofficialgoogledatascience.com/2018/01/designing-ab-tests-in-collaboration.html)
+* [Paper: A/B Testing for Social Network Services with Directed User Graphs](http://www.tkl.iis.u-tokyo.ac.jp/~kenn-chen/files/AB%20Testing%20for%20Social%20Network%20Services%20with%20Directed%20User%20Graphs.pdf)
+* [Paper: Graph Cluster Randomization: Network Exposure to Multiple Universes](http://chbrown.github.io/kdd-2013-usb/kdd/p329.pdf)
+* [TDS Blog: Sample Ratio Mismatch](https://towardsdatascience.com/the-essential-guide-to-sample-ratio-mismatch-for-your-a-b-tests-96a4db81d7a4)
