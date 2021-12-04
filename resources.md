@@ -7,6 +7,6 @@
 * [TDS: How to choose a sample size](https://towardsdatascience.com/how-is-sample-size-related-to-standard-error-power-confidence-level-and-effect-size-c8ee8d904d9c)
 * [TDS: Peeking in A/B test](https://towardsdatascience.com/unlocking-peeking-in-ab-tests-7847b9c2f6bb)
 * [Netflix Blog: Meta Analysis and Optimal Stopping](https://netflixtechblog.com/improving-experimentation-efficiency-at-netflix-with-meta-analysis-and-optimal-stopping-d8ec290ae5be)
-* [Run randomness check: A/A test](https://vwo.com/blog/aa-test-before-ab-testing/) and [TDS: statistical approach to A/A test](An A/B Test Loses Its Luster If A/A Tests Fail)
+* [Run randomness check: A/A test](https://vwo.com/blog/aa-test-before-ab-testing/) and [TDS: statistical approach to A/A test](https://towardsdatascience.com/an-a-b-test-loses-its-luster-if-a-a-tests-fail-2dd11fa6d241)
 * [Lyft Engineering: Network effect](https://eng.lyft.com/experimentation-in-a-ridesharing-marketplace-b39db027a66e)
 * [TDS: A/B testing in social network](https://towardsdatascience.com/ab-testing-challenges-in-social-networks-e67611c92916)
