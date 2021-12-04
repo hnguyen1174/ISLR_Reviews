@@ -43,6 +43,8 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
 * Switch-backs:
   * [DoorDash tech blog: Switchback Tests and Randomized Experimentation Under Network Effects at DoorDash](https://medium.com/@DoorDash/switchback-tests-and-randomized-experimentation-under-network-effects-at-doordash-f1d938ab7c2a) 
 * Local Average Treatment Effect (LATE)
+* Propensity Score Matching:
+  * [Targeted Maximum Likelihood (TMLE) for Causal Inference](https://towardsdatascience.com/targeted-maximum-likelihood-tmle-for-causal-inference-1be88542a749)
 
 ## 3. Natural Experiments
 
