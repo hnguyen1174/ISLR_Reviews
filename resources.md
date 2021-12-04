@@ -1,4 +1,4 @@
-## 1. General A/B Testing
+## 1. A/B Testing
 
 * [A/B Testing course (Udacity/Google)](https://www.udacity.com/course/ab-testing--ud257)
 * [Advanced A/B testing workshop](https://eleafeit.github.io/ab_test/)
@@ -18,3 +18,14 @@
 * [Blog: Pitfalls of Multi-arm Experiments](https://blog.statsig.com/pitfalls-of-multi-arm-experiments-445c81ae75d)
 * [Udemy Course: 
 Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/course/bayesian-machine-learning-in-python-ab-testing/learn/lecture/21793938?start=15#overview)
+
+## 2. Quasi-Experiment
+
+* Difference in difference:
+  * [Airbnb Blog: Difference in difference](https://medium.com/airbnb-engineering/experimentation-measurement-for-search-engine-optimization-b64136629760)
+* Uplift Model
+  * [TDS Blog: Introduction to Uplift model](https://towardsdatascience.com/a-quick-uplift-modeling-introduction-6e14de32bfe0)
+  * [Blog: Enterprise Causal Inference: Beyond Churn Modeling](https://medium.com/data-from-the-trenches/enterprise-causal-inference-beyond-churn-modeling-78a13a431501)
+  * [Uplift Modeling](https://towardsdatascience.com/uplift-modeling-e38f96b1ef60)
+  * [Article: How uplift modeling helped Obama’s campaign — and can aid marketers](https://www.predictiveanalyticsworld.com/machinelearningtimes/how-uplift-modeling-helped-obamas-campaign-and-can-aid-marketers/2613/)
+  * [Blog: Causal Machine Learning: Individualized Treatment Effects and Uplift Modeling](https://johaupt.github.io/causal%20machine%20learning/Uplift_ITE_summary) 
