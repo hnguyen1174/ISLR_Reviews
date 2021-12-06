@@ -27,6 +27,8 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
 * Difference in difference:
   * [Airbnb Blog: Difference in difference](https://medium.com/airbnb-engineering/experimentation-measurement-for-search-engine-optimization-b64136629760)
   * [Tutorial: Causal Inference using Difference in Differences, Causal Impact, and Synthetic Control](https://towardsdatascience.com/causal-inference-using-difference-in-differences-causal-impact-and-synthetic-control-f8639c408268)
+  * [Causal Inference in Data Science: A/B Testing and the need for Marginal Structural Modeling](https://towardsdatascience.com/causal-inference-in-data-science-a-b-testing-and-the-need-for-marginal-structural-modeling-b9ab299681bb)
+  * [Causal Inference in Data Science: A/B Testing & Randomized Trials with Covariate Adjustment](https://towardsdatascience.com/causal-inference-in-data-science-a-b-testing-randomized-trials-with-covariate-adjustment-f5a24bd023b3)
 * Uplift Model
   * [TDS Blog: Introduction to Uplift model](https://towardsdatascience.com/a-quick-uplift-modeling-introduction-6e14de32bfe0)
   * [Blog: Enterprise Causal Inference: Beyond Churn Modeling](https://medium.com/data-from-the-trenches/enterprise-causal-inference-beyond-churn-modeling-78a13a431501)
@@ -38,6 +40,8 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
 * Instrument Variables:
   * [Roblox Tech Blog: Causal Inference Using Instrumental Variables](https://robloxtechblog.com/causal-inference-using-instrumental-variables-580272d9ddbd)
   * [Tutorial: Machine Learning Meets Instrumental Variables](https://medium.com/teconomics-blog/machine-learning-meets-instrumental-variables-c8eecf5cec95) 
+  * [Regression Discontinuity Design: The Crown Jewel of Causal Inference](https://towardsdatascience.com/the-crown-jewel-of-causal-inference-regression-discontinuity-design-rdd-bad37a68e786)
+  * [Synthetic Instrumental Variables](https://towardsdatascience.com/synthetic-instrumental-variables-968b12f68772)
 * Synthetic Control:
   * [Tutorial: Causal Inference Using Synthetic Control: The Ultimate Guide](https://towardsdatascience.com/causal-inference-using-synthetic-control-the-ultimate-guide-a622ad5cf827) 
 * Switch-backs:
@@ -45,6 +49,12 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
 * Local Average Treatment Effect (LATE)
 * Propensity Score Matching:
   * [Targeted Maximum Likelihood (TMLE) for Causal Inference](https://towardsdatascience.com/targeted-maximum-likelihood-tmle-for-causal-inference-1be88542a749)
+  * [Causal Inference in Data Science: Conditional Independence via Propensity Score Adjustment](https://towardsdatascience.com/causal-inference-in-data-science-conditional-independence-via-propensity-score-adjustment-bbe6d70e2a5)
+* With temporal elements:
+  * [G-computation in Causal Inference](https://towardsdatascience.com/g-computation-in-causal-inference-774099da3631)
+* Text-based/NLP:
+  * [Text-based Causal Inference](https://towardsdatascience.com/text-based-causal-inference-86e640efb2af) 
+  * [Improving NLP with Causality](https://towardsdatascience.com/improving-nlp-with-causality-2dec1fa90b74)
 
 ## 3. Natural Experiments
 
@@ -61,3 +71,8 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
   * [Meta-learners for Estimating Treatment Effect in Causal Inference](https://towardsdatascience.com/meta-learners-for-estimating-treatment-effect-in-causal-inference-4f7071503401)
 * Causal Deep Learning:
   * [Multivariate Time Series Forecasting Based on Causal Inference with Transfer Entropy and Graph Neural Network](https://www.researchgate.net/publication/341148262_Multivariate_Time_Series_Forecasting_Based_on_Causal_Inference_with_Transfer_Entropy_and_Graph_Neural_Network)
+
+## 5. Blogs to follow
+
+* [Leihua Ye, Ph.D. Researcher](https://leihua-ye.medium.com/)
+* [Andrew Rothman](https://anr248.medium.com/)
