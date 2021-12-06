@@ -29,6 +29,8 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
   * [Tutorial: Causal Inference using Difference in Differences, Causal Impact, and Synthetic Control](https://towardsdatascience.com/causal-inference-using-difference-in-differences-causal-impact-and-synthetic-control-f8639c408268)
   * [Causal Inference in Data Science: A/B Testing and the need for Marginal Structural Modeling](https://towardsdatascience.com/causal-inference-in-data-science-a-b-testing-and-the-need-for-marginal-structural-modeling-b9ab299681bb)
   * [Causal Inference in Data Science: A/B Testing & Randomized Trials with Covariate Adjustment](https://towardsdatascience.com/causal-inference-in-data-science-a-b-testing-randomized-trials-with-covariate-adjustment-f5a24bd023b3)
+  * [8 Common Pitfalls of Running A/B Tests](https://towardsdatascience.com/online-controlled-experiment-8-common-pitfalls-and-solutions-ea4488e5a82e)
+  * [A Practical Guide To A/B Tests in Python](https://towardsdatascience.com/a-practical-guide-to-a-b-tests-in-python-66666f5c3b02)
 * Uplift Model
   * [TDS Blog: Introduction to Uplift model](https://towardsdatascience.com/a-quick-uplift-modeling-introduction-6e14de32bfe0)
   * [Blog: Enterprise Causal Inference: Beyond Churn Modeling](https://medium.com/data-from-the-trenches/enterprise-causal-inference-beyond-churn-modeling-78a13a431501)
@@ -50,8 +52,12 @@ Bayesian Machine Learning in Python: A/B Testing](https://aetna-abc.udemy.com/co
 * Propensity Score Matching:
   * [Targeted Maximum Likelihood (TMLE) for Causal Inference](https://towardsdatascience.com/targeted-maximum-likelihood-tmle-for-causal-inference-1be88542a749)
   * [Causal Inference in Data Science: Conditional Independence via Propensity Score Adjustment](https://towardsdatascience.com/causal-inference-in-data-science-conditional-independence-via-propensity-score-adjustment-bbe6d70e2a5)
+  * [Tutorial: Propensity Score Matching in Python](https://towardsdatascience.com/propensity-score-matching-a0d373863eec)
+  * [An Ultimate Guide to Matching and Propensity Score Matching](https://towardsdatascience.com/an-ultimate-guide-to-matching-and-propensity-score-matching-644395c46616)
+  * [Tutorial: Propensity Score Stratification in Observational Data: A Tutorial](https://towardsdatascience.com/propensity-score-stratification-in-observational-data-a-tutorial-ef21321eb586)
 * With temporal elements:
   * [G-computation in Causal Inference](https://towardsdatascience.com/g-computation-in-causal-inference-774099da3631)
+  * [Inferring causality in time series data](https://towardsdatascience.com/inferring-causality-in-time-series-data-b8b75fe52c46)
 * Text-based/NLP:
   * [Text-based Causal Inference](https://towardsdatascience.com/text-based-causal-inference-86e640efb2af) 
   * [Improving NLP with Causality](https://towardsdatascience.com/improving-nlp-with-causality-2dec1fa90b74)
