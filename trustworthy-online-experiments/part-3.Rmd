@@ -11,3 +11,31 @@ These are notes from the book "Trustworthy Online Controlled Experiments" (Diane
 ## 1. Complementary Techniques
 
 * **Why should we care?** when running experiments, we also need to test, create and validate metrics, and establish evidence to support broader conclusions. Complementary techniques and observation studies complement and augment healthy A/B testing culture.
+
+### 1.1. The Space of Complimentary Techniques
+
+* In addition to the care and rigor in analysis, and in the creation of the experiment platform and tools, to be successful in A/B testing, we also need:
+  * **Idea funnel**: the ideas for experiments
+  * Validated metrics to measure the effects we care about
+  * Evidence to support or refute hypotheses, when running a controlled experiment is either not possible or insufficient.
+  * (Optional) Metrics that compliment the metrics from the online controlled experiment.
+* For ideas that are easy to implement, we recommend running an online experiment directly.
+* For ideas that are more expensive, we can use the complementary techniques for early evaluation and idea pruning to reduce experimentation cost.
+* As another example for using complementary techniques, what if **you want a reliable proxy metric** for user satisfaction, a concept that is quite difficult to measure. You can run a **survey** and gather self-reported user satisfaction data, and then analyze **instrumented logs data** to see what large-scale observational metrics correlate with the survey results. You can extend this further by running controlled experiments to validate the proposed proxy metrics.
+* The methods we discuss in this chapter vary along two axes: scale (i.e., number of users) vs. depth of information per user.
+
+![](../fig/toce-part3-a.png)
+
+### 1.2. Log-based analysis (retrospective analysis)
+
+* **Requirements:** having proper instrumentation of user views, actions, and interactions to compute metrics for evaluating controlled experiments.
+* Log-based analysis helps with:
+  * **Building intuition:** can help answer questions such as (1) What is the distribution of sessions-per-user or
+click-through rate?; (2) What is the difference by key segments, such as by country or platform; (3) How do these distributions shift over time?; (4) How are users growing over time? Building this intuition helps you understand your **product and system baseline**, what the **variance** is, what is happening **organically** independent of experimentation, **what size change might be practically significant**, and more.
+  * **Characterizing potential metrics:** Building intuition is the precursor for characterizing potential metrics. Characterization helps you understand the variance and distributions, how new metrics correlate with existing metrics. Log-based analyses establish understanding of how a potential metric might perform on past experiments.
+  * **Generating ideas for A/B experiments** based on exploring the underlying data: for example, you can examine
+the conversion rate at each step of the purchase funnel to identify large drop offs.
+  * You can explore whether ideas generated using these complementary techniques **happen at-scale** and are **worth investing time** implementing and evaluating using an A/B experiment.
+  * **Natural experiments:** These occur occasionally, either due to exogenous circumstances (e.g., an external company changing a default) or bugs (e.g., a bug that logs all users out). In those cases, run an observational analysis (see Chapter 11) to measure the effect. 
+  * **Observational causal studies**: You can run these studies when experiments are not possible, for example, you can use quasi-experimental designs. When you use quasi-experimental designs in combination with experiments, they can lead to an improved inference of a more general result.
+* **Limitation**: can only infer what will happen in the future based on what happened in the past. For example, you may decide not to further invest in the e-mail attachment feature because current usage is small; however, the current low usage might have been caused by the fact that it is difficult to use, which logs-based analysis may not reveal.
