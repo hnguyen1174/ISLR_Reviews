@@ -10,3 +10,4 @@
     * Assigning a member to a specific variant of the test. 
     * Propagating information about the tests and their definition to a production environment and recording information about members’ participation in the test.
     * Computing A/B reports and measuring the test’s impact. 
+* [Building inclusive products through A/B testing](https://engineering.linkedin.com/blog/2020/building-inclusive-products-through-a-b-testing)
