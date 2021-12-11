@@ -1,0 +1,13 @@
+---
+title: "Part 3: Complementary & Alternative Techniques to Controlled Experiments"
+output: html_notebook
+---
+
+These are notes from the book "Trustworthy Online Controlled Experiments" (Diane Tang, Ron Kohavi, and Ya Xu)
+
+* Complementary techniques include user experience research study, surveys, focus groups and human evaluations - used in conjunction with online controlled experiments. Data scientists can use these methods to generate and evaluate ideas in an idea funnel before investing in an online experiment, and to generate and evaluate metrics as surrogate metrics in an online experiment.
+* Observational causal studies when online controlled experiments are not possible.
+
+## 1. Complementary Techniques
+
+* **Why should we care?** when running experiments, we also need to test, create and validate metrics, and establish evidence to support broader conclusions. Complementary techniques and observation studies complement and augment healthy A/B testing culture.
