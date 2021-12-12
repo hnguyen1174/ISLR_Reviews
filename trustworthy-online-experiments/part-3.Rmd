@@ -39,3 +39,25 @@ the conversion rate at each step of the purchase funnel to identify large drop o
   * **Natural experiments:** These occur occasionally, either due to exogenous circumstances (e.g., an external company changing a default) or bugs (e.g., a bug that logs all users out). In those cases, run an observational analysis (see Chapter 11) to measure the effect. 
   * **Observational causal studies**: You can run these studies when experiments are not possible, for example, you can use quasi-experimental designs. When you use quasi-experimental designs in combination with experiments, they can lead to an improved inference of a more general result.
 * **Limitation**: can only infer what will happen in the future based on what happened in the past. For example, you may decide not to further invest in the e-mail attachment feature because current usage is small; however, the current low usage might have been caused by the fact that it is difficult to use, which logs-based analysis may not reveal.
+
+### 1.3. Human Evaluation
+
+* **What is it?** Human evaluation is where a company pays a human judge, also called a rater, to complete some task. The results are then used in subsequent analysis. This is a common evaluation method in search and recommendation systems.
+* Typically, multiple raters are assigned the same task, as raters may disagree; you can use various voting or other disagreement resolution mechanisms to obtain high-quality aggregate labeling.
+* **Limitations:**
+  * Raters are generally not your end users. Raters are doing tasks assigned to them – often in bulk, whereas your product is something your end users come by organically to their lives.  
+  *  Raters can miss the **local context** of real users. For example, the search query "5/3" to many raters is an arithmetic query and will expect the result 1.667, yet users living near the “Fifth Third Bank,” whose logo is "5/3," are looking for the bank information. 
+* It is best to think that your human evaluation provides calibrated labeled data to complement data gathered from real users.
+* You can use metrics based on human evaluation as additional metrics for evaluating A/B experiments. For example: 
+  * You can ask raters to rate results from either Control or Treatment for a given query and aggregate the ratings to see which variant is preferred.
+  * Or use a side-by-side experiment, where Control and Treatment search results are shown side by side, and raters asked which side is "better." (Bing and Google)
+* Human evaluation results are also useful for **debugging**: you can examine the results in detail to understand where changes perform well and poorly.
+* You can also **pair human evaluation with log-based analysis** to understand what observed user actions correlate with highly relevant results for a query.
+
+### 1.4. User Experience Research (UER)
+
+* **What is it?**  Observing users doing tasks of interest and answering questions in either a lab setting or in situ. This type of research is in-depth and intensive typically with at most tens of users, and is useful for generating ideas, spotting problems, and gaining insights from direct observation and timely questions.
+* These type of field and lab studies can include:
+  * Special equipment to gather data, such as eyetracking that you cannot gather from your instrumentation.
+  * Diary studies, where users self-document their behavior longitudinally, are useful for gathering data analogous to online instrumentation but augmented with data you cannot gather via instrumentation, such as user intent or offline activities.
+* These techniques can be useful for **generating metric ideas** based on correlating "true" user intent with what we observe via instrumentation. You must validate these ideas using methods that scale to more users, such as **observational analyses and controlled experiments**.
